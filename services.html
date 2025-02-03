@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Services</title>
+    <style>
+        body {
+            background-color: #5905f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+        }
+        .logo {
+            font-size: 2rem;
+            color: #ffffff;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+        }
+        .logo:hover {
+            color: #e0e0e0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .service {
+            background-color: #5905f7;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #5905f7;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .contact-btn:hover {
+            background-color: #4304b5;
+        }
+    </style>
+</head>
+<body>
+    <!-- الرابط يجب أن يعمل -->
+    <a href="./index.html" class="logo">Rayan</a> <!-- الرابط الذي يعيدك إلى الصفحة الرئيسية -->
+    <div class="container">
+        <h2>My Services</h2>
+        <div class="services">
+            <div class="service">Web Development</div>
+            <div class="service">UI/UX Design</div>
+            <div class="service">SEO Optimization</div>
+            <div class="service">Backend Development</div>
+            <div class="service">Consulting</div>
+            <div class="service">E-commerce Solutions</div>
+        </div>
+        <a href="contact.html" class="contact-btn">📩 Contact Me</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan Skills</title>
+    <style>
+        body {
+            background-color: #5905f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .skill {
+            background-color: #5905f7;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .background-animation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: moveAround 10s infinite alternate ease-in-out;
+        }
+        @keyframes moveAround {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(100px, 200px); }
+            100% { transform: translate(-100px, -200px); }
+        }
+        .logo {
+            font-size: 2rem;
+            color: #ffffff;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+        }
+        .logo:hover {
+            color: #e0e0e0;
+        }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #5905f7;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .contact-btn:hover {
+            background-color: #4304b5;
+        }
+    </style>
+</head>
+<body>
+    <!-- الزر الذي يعيدك للصفحة الرئيسية -->
+    <a href="index.html" class="logo">Rayan</a>
+    
+    <div class="background-animation">
+        <div class="circle" style="top: 10%; left: 20%; animation-duration: 12s;"></div>
+        <div class="circle" style="top: 50%; left: 80%; animation-duration: 15s;"></div>
+        <div class="circle" style="top: 70%; left: 30%; animation-duration: 18s;"></div>
+    </div>
+    
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">CSS</div>
+            <div class="skill">HTML</div>
+            <div class="skill">TailwindCSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Django</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Kali Linux</div>
+        </div>
+        <!-- زر العودة إلى صفحة الاتصال -->
+        <a href="contact.html" class="contact-btn">📩 Contact Me</a> 
+    </div>
+</body>
+</html>
